@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChatGPT Front Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>ChatGPT</h2>
+
+        <button class="new-chat">+ New Chat</button>
+
+        <div class="history">
+            <p>Previous Chats</p>
+
+            <div class="chat-item">HTML Project</div>
+            <div class="chat-item">JavaScript Help</div>
+            <div class="chat-item">Study Planner</div>
+        </div>
+
+        <div class="profile">
+            Tarasha
+        </div>
+
+    </div>
+
+
+    <div class="main">
+
+        <div class="topbar">
+            <h3>ChatGPT</h3>
+        </div>
+
+
+        <div class="content">
+
+            <h1>What can I help with?</h1>
+
+            <div class="suggestions">
+
+                <button onclick="fillMessage('Explain HTML')">
+                    Explain HTML
+                </button>
+
+                <button onclick="fillMessage('Help me learn JavaScript')">
+                    Learn JavaScript
+                </button>
+
+                <button onclick="fillMessage('Create a study plan')">
+                    Study Plan
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Message ChatGPT"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
